@@ -1,0 +1,44 @@
+{#
+ # Layout template
+ # ---------------
+ #
+ # This template defines your site’s global layout. It can be
+ # “extended” by other templates to fill in the gaps.
+ #
+ # See Twig’s Template Inheritance documentation for more details:
+ # http://twig.sensiolabs.org/doc/templates.html#template-inheritance
+ #}
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<head>
+	<meta charset="utf-8" />
+	<title>{% if title is defined %}{{ title }} - {% endif %}{{ siteName }}</title>
+	<link rel="home" href="{{ siteUrl }}" />
+
+    <!-- Importing jQuery -->
+    <script language="JavaScript" type="text/javascript" src="../scrips/jquery-3.2.1.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="../scrips/jquery-3.2.1.js"></script>
+    <script language="JavaScript" type="text/javascript" src="../scrips/myJQ.js"></script>
+    
+    <!-- Importing online stylesheets -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Importing local stylesheet -->
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	{% includeCssFile "/styles.css" %}
+    
+    
+    
+
+
+</head>
+
+
+
+<body>
+
+
+</body>
+</html>
